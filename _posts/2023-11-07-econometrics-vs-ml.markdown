@@ -1,3 +1,17 @@
+---
+title: "Econometrics vs. Machine Learning: Decoding the Data Duel"
+layout: post
+date: 2023-11-07 15:51
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- markdown
+- components
+- extra
+category: blog
+author: samuelgnap
+description: How different is econometrics to machine learning
+---
 # Econometrics vs. Machine Learning: Decoding the Data Duel
 
 Hello to all data detectives out there! Today, let’s dive into the often misunderstood rivalry between econometrics and machine learning. Think of it as a friendly chess match rather than a gladiator fight in the data arena.
