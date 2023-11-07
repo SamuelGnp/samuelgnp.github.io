@@ -4,7 +4,7 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Hi and welcome to my blog. I will </p>
+<p>Hi and welcome to my blog!</p>
 
 <p> I'm Samuel Gnap, a data science enthusiast and a bit of a number cruncher at heart. 
 	Currently, I'm navigating the skies of data with easyJet in London, where I blend my love for numbers (and planes) 
@@ -31,5 +31,5 @@ layout: page
 
 <ul class="skill-list">
 	<li>Python</li>
-	<li>and whatever is needed (SQL, C, C++,..., and much more)</li>
+	<li>and whatever is needed for the job (SQL, C, C++,..., and much more)</li>
 </ul>
