@@ -1,6 +1,6 @@
 # main text of home
 title: Samuel Gnap
-bio: A curious guy
+bio: Always curious
 
 # twitter summary info
 description: A blog about technology and stuff
@@ -33,22 +33,16 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
-github: mygithub
-email: myemail@gmail.com
+# facebook: myfacebook
+# twitter: mytwitter
+# instagram: myinstagram
+linkedin: https://www.linkedin.com/in/gnapsamuel/
+github: https://github.com/SamuelGnp
+email: gnapsamuel@yahoo.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
-    external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
+  samuelgnap:
+    name: Samuel Gnap
     bio: A Man who develops software with coffee
     external-image: false
     picture: assets/images/james.jpg
@@ -70,7 +64,7 @@ blog: true
 read-time: true
 
 # do you want to show the "tags" inside the posts?
-show-tags: true
+show-tags: false
 
 # related posts inside a post?
 related: true
@@ -79,7 +73,7 @@ related: true
 post-advance-links: [blog]
 
 # show author block at the end of a post ?
-show-author: true
+show-author: false
 
 # do you want some animations?
 animation: true
