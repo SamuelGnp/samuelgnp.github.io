@@ -28,12 +28,10 @@ Imagine a dance floor where the lead dancer is our exogenous variable. Their rol
 Translating this into our regression model, we have:
 
 {% highlight html %}
-Y=β0+β1X1+β2X2+...+βkXk+ϵY=β0​+β1​X1​+β2​X2​+...+βk​Xk​+ϵ
+$$
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
+$$
 {% endhighlight %}
-
-**The Cauchy-Schwarz Inequality**
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-
 
 Here, YY represents the outcome of the dance, the performance we are trying to predict or understand, such as an individual's earnings. The exogenous variables X1,X2,...,XkX1​,X2​,...,Xk​ are our lead dancers, each one contributing a part to the final outcome, with their coefficients β1,β2,...,βkβ1​,β2​,...,βk​ measuring the strength and direction of their influence. β0β0​ is the intercept, akin to the starting position of the dance, while ϵϵ represents the spontaneous flair or the inevitable missteps - the unexplained variance in our performance.
 
