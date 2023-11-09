@@ -13,13 +13,7 @@ author: samuelgnap
 description: Ommited variable problem 
 ---
 
-# Navigating the Two-Way Street: Addressing Simultaneity and Price Endogeneity in Demand and Supply Estimation
-
-### The Omitted Variable Foxtrot
-
-In the world of econometrics and machine learning, omitting an influential variable from our models can throw off our entire performance. It's a critical error that can lead to false conclusions, and it's a pitfall that practitioners in both fields diligently seek to avoid.
-
-### Exogenous Variables: The Lead Dancers
+## Exogenous Variables: The Lead Dancers
 
 In the grand ballroom of econometric analysis, exogenous variables are akin to lead dancers. They command the performance, guiding the outcome with precision and influence, yet they remain impervious to the sway of other variables—the spectators of our model. Their role is critical, and their steps must be unerring, for they set the tempo for the dependent variable, our performance metric, without succumbing to the surrounding movements.
 
@@ -31,8 +25,6 @@ $$
 
 Here, $$ Y $$ is our dependent variable, akin to the final performance score in a dance competition, influenced by a variety of factors, such as an individual's earnings. The exogenous variables $$ X_1,X_2,...,X_kX_1​,X_2​,...,X_k​ $$ represent our lead dancers, with the coefficients $$β_1,β_2,...,β_kβ_1​,β_2​,...,β_k​$$ quantifying their impact on $$ Y $$. The intercept  $$β_0​$$ is comparable to the baseline score when the competition begins, and the error term $$ ϵ $$ encapsulates all the unforeseen elements—the slight missteps, the unexpected rhythms—that the lead dancers' movements (our exogenous variables) do not account for.
 
-The error term $$ ϵ $$ represents the residuals: the differences between the observed values and the values predicted by our model. In a perfectly choreographed world, these residuals would be purely random—this randomness is what statisticians refer to as "white noise." To ensure the reliability of our regression, we anticipate that $$ ϵ $$ possesses specific characteristics:
-
 1. It has a mean of zero, indicating that the residuals, on average, do not deviate in one direction or another.
 2. It is homoscedastic, meaning the variance of the error term is constant across all levels of our explanatory variables.
 3.  It is normally distributed, particularly important when we're making inferences about population parameters based on our sample, allowing us to apply various statistical tests.
@@ -42,38 +34,101 @@ The exogenous variables, as expert lead dancers, maintain their rhythm uncorrela
 In sum, the exogenous variables carry the performance with their predefined influence, while the error term $$ ϵ $$, a conglomeration of all other random effects, dances in the background. Our goal is to minimize these random fluctuations by carefully selecting our lead dancers, ensuring that the variability they cannot explain remains as a background noise, not interfering with the integrity of the performance, our econometric model.
    
 
-### The Simultaneity Shuffle and the Machine Learning Twist
+## Endogeneity: The Disruptive Dancer
 
-Simultaneity enters the stage when variables such as supply and demand react to each other simultaneously. This is where both econometric and machine learning models face a common challenge. If this mutual interaction isn't accounted for, models may incorrectly assign causation, leading to a tangled understanding of the relationships at play.
+Endogeneity is like a disruptive dancer, causing the lead performers to miss their cues. It arises when an explanatory variable, which should be exogenous, is correlated with the error term. This can occur due to omitted variables, measurement error, or simultaneity. Each of these sources of endogeneity can lead to biased and inconsistent estimates, distorting the true effects of the variables on our dependent variable.
 
-### Ordinary Least Squares (OLS) Missteps
+### The Omitted Variable Foxtrot
 
-OLS is a classic step in statistical analysis, but it falters when the music of simultaneity plays. Machine learning models are similarly challenged and can stumble without the proper design to navigate the interplay of variables.
+In the world of econometrics and machine learning, omitting an influential variable from our models can throw off our entire performance. It's akin to forgetting a step in a dance routine, which can throw the entire performance into disarray.
 
-### The Price Endogeneity Tango
+For example, if we fail to include a variable like the level of education in our model that predicts earnings, our coefficients for other variables, like years of experience, may be overstated because they are picking up the effect of the omitted education variable.
 
-Price endogeneity is a delicate balance in this economic tango, where price is both influenced by and an influencer of market forces. Not accounting for this bidirectional influence can lead to models that misinterpret the economic reality.
+### The Simultaneity Shuffle
 
-### Choreographing Econometric Solutions and Machine Learning Ensembles
+Simultaneity enters the stage when variables such as supply and demand react to each other in real-time. If this mutual interaction isn't accounted for, models may incorrectly assign causation, leading to a tangled understanding of the relationships at play.
 
-To address these challenges, we employ an array of methods. Econometrics offers simultaneous equation models, while machine learning approaches may include ensemble methods or causal inference techniques to disentangle complex relationships.
+Demand function:
+$$
+Q_d = \alpha + \beta P + \epsilon_d
+$$
+Price function:
+$$
+P = \gamma + \delta Q_d + \epsilon_p
+$$
+
+Here, the price $$ P $$ and quantity demanded $$ Q_d $$​ are both dancers in this economic ballet, influencing each other in a continuous pas de deux. In an OLS framework, we would expect the error term $$ ϵ_d $$​ in the demand function to be uncorrelated with the price $$ P $$. Yet, due to the simultaneity of these variables, this is not the case:
+
+$$
+Cov(P, \epsilon_d) \neq 0
+$$
+
+This non-zero covariance indicates that OLS may naively interpret the positive correlation between high demand and high prices as a direct causal relationship, possibly leading to the misguided belief that higher prices could always induce higher demand. This overlooks the reality that demand might decrease in response to higher prices, an interplay that the OLS does not account for, mistaking the intricate dance for a simple march.
+
+When simultaneity is at play, OLS estimates can become biased and inconsistent, failing to separate the simultaneous influence of price on demand and vice versa. The estimates do not converge to the true values because with each new sample, the dance changes, reflecting the market's ever-evolving rhythm rather than a fixed choreography. This results in a biased estimate of $$ β $$, the parameter showing the impact of price on demand, because OLS mistakenly captures the effect of demand on price as well, thus conflating two separate effects into one measure.
+
+In this scenario, the OLS procedure cannot reliably discern the individual steps of each dancer —price and demand— and instead sees them as a single movement, leading to a distorted view of the economic dance.
+
+
+## Choreographing Econometric Solutions and Machine Learning Ensembles
 
 ### Instrumental Variables Technique: The Routine
 
-Selecting the right instruments—variables that are related to the endogenous variables but are exogenous themselves—is critical. This selection is just as crucial in machine learning, where it helps to create features that correct for the endogeneity.
+The instrumental variables (IV) approach introduces a new dancer to the floor—variables that can lead the endogenous variable without being affected by the error terms in the equation. These instruments must be correlated with the endogenous variable but uncorrelated with the error term, providing the leverage needed to estimate the true effect of the endogenous variable.
+
+Finding a suitable instrument in practice is often akin to casting the perfect lead for a complex ballet performance — it is a significant challenge. The ideal instrument must be strongly correlated with the endogenous explanatory variable but must not be correlated with the error term in the equation, satisfying the conditions of relevance and exogeneity:
+
+Instrument Validity:
+
+Exogeneity:
+$$
+Cov(Instrument, \epsilon) = 0
+$$
+
+$$
+Cov(Instrument, Endogenous Variable) \neq 0
+$$
+
+These conditions ensure that the instrument is not part of the error term's dance, allowing us to isolate the pure effect of the endogenous variable on the outcome. In reality, the conditions for a valid instrument are stringent and difficult to meet. Instruments that are weakly correlated with the endogenous variable can lead to biased estimates and weaken the power of statistical tests, a scenario known as weak instrument bias.
+
+Furthermore, proving the exogeneity of the instrument is often complex, as it requires demonstrating that the instrument does not capture the effect of omitted variables. The plausibility of the instrument's exogeneity is sometimes based on theoretical assumptions or qualitative knowledge, which can be subject to debate.
+
+Another potential issue is the overidentification problem. When there are more instruments than endogenous variables, the model can be overidentified, and we need to test whether the additional instruments are valid. Overidentification tests can be used to assess the validity of the instruments, but these tests have their limitations and can lack power.
 
 ### Adding Difference-in-Differences (DiD) to the Repertoire
 
-DiD is a sophisticated step that adjusts for changes over time and between groups, effectively handling endogeneity by exploiting natural experiments or policy changes. By comparing the pre- and post-treatment effects on a treated group versus a control group, DiD isolates and subtracts away the part of the variation that isn't caused by the treatment. This method is increasingly becoming a part of the machine learning toolkit, offering a statistical choreography that can reveal the causal impacts more clearly.
+DiD offers a way to measure the steps of policy changes over time, providing a natural experiment setting. By observing the dance before and after the policy intervention, and comparing it to a group not affected by the policy, DiD can effectively control for unobserved variables that might be causing both the intervention and the outcomes.
 
-### Case Study: In Practice
+DiD Estimation:
 
-We examine a case study that incorporates 2SLS and DiD, demonstrating how these techniques can refine both econometric and machine learning models. This practical application shows the power of the right data and methods to uncover the true effects of variables like price on demand.
+$$
+Y_{after} - Y_{before} = (Treatment_{after} - Treatment_{before}) - (Control_{after} - Control_{before})
+$$
+
+This equation allows us to subtract out the part of the variation in the outcome (YY) that is not attributable to the treatment, isolating the causal effect.
+The DiD approach relies on comparing the changes in outcomes over time between a group that is exposed to a treatment (the treatment group) and a group that is not (the control group). The fundamental assumption here is that, in the absence of the treatment, the difference in outcomes between the two groups would have remained constant over time — an assumption known as the parallel trends assumption:
+
+Parallel Trends Assumption:
+$$
+
+E[Y_{\text{treatment}, \text{pre}} - Y_{\text{control}, \text{pre}}] = E[Y_{\text{treatment}, \text{post}} - Y_{\text{control}, \text{post}}]
+
+$$
+
+This assumption is critical and often the hardest to verify, as it requires knowing the counterfactual — what would have happened in the absence of the treatment. While pre-treatment trends can be analyzed, the assumption cannot be tested directly for the post-treatment period. Violations of the parallel trends assumption can lead to biased estimates of the treatment effect.
+
+DiD is also sensitive to the presence of other concurrent events or policy changes that could affect the outcome variable simultaneously with the treatment. These events can create additional differences between the treatment and control groups that are not due to the treatment itself, thereby confounding the estimated treatment effect.
 
 ### Watch Your Step: Challenges and Considerations
 
-The selection of instruments or features, whether in econometrics or machine learning, must be approached with caution. Inappropriate choices can compromise the model's integrity, leading to unreliable predictions. We highlight best practices to maintain the model's accuracy and ensure robust conclusions.
+Choosing the right instruments or designing a DiD study requires a delicate touch. A misstep in instrument selection or in defining the treatment and control groups can lead to a misattribution of causation, akin to a misstep on the dance floor leading to a fall.
 
-### The Final Bow
 
-As we conclude, we acknowledge the shared challenge of endogeneity and simultaneity across econometrics and machine learning. By incorporating methods like DiD alongside traditional approaches, we enhance the robustness of our analyses. This cross-disciplinary finesse is crucial for making informed decisions in economics, business, and policy. As we continue to refine our analytical techniques, we invite you to join us in this ongoing quest for precision and insight, leveraging the full power of data to inform and guide the decisions that shape our world.
+
+
+
+
+
+
+
+
