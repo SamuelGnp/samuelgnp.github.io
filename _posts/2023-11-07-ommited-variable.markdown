@@ -110,9 +110,9 @@ The DiD approach relies on comparing the changes in outcomes over time between a
 
 Parallel Trends Assumption:
 $$
-
+\[
 E[Y_{\text{treatment}, \text{pre}} - Y_{\text{control}, \text{pre}}] = E[Y_{\text{treatment}, \text{post}} - Y_{\text{control}, \text{post}}]
-
+\]
 $$
 
 This assumption is critical and often the hardest to verify, as it requires knowing the counterfactual — what would have happened in the absence of the treatment. While pre-treatment trends can be analyzed, the assumption cannot be tested directly for the post-treatment period. Violations of the parallel trends assumption can lead to biased estimates of the treatment effect.
