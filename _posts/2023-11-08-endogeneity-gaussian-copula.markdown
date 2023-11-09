@@ -27,7 +27,7 @@ However, the use of Gaussian copulas comes with its own assumptions and limitati
 
 These insights suggest that while Gaussian copulas present a viable option for addressing endogeneity, especially when traditional instrumental variables are not applicable or available, researchers must proceed with caution due to the underlying assumptions and the current gaps in the understanding of its application and limitations.
 
-{% highlight python %}
+{% highlight html %}
 
 import pandas as pd
 import numpy as np
