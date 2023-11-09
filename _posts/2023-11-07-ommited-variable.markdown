@@ -5,9 +5,9 @@ date: 2023-11-07 19:05
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+- econometrics
+- Simultaneity
+- Endogeneity
 category: blog
 author: samuelgnap
 description: Ommited variable problem 
@@ -27,25 +27,14 @@ Imagine a dance floor where the lead dancer is our exogenous variable. Their rol
 
 Translating this into our regression model, we have:
 
-{% highlight html %}
-$$
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
-$$
-{% endhighlight %}
-
-
-
 $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
 $$
 
 
+Here, YY represents the outcome of the dance, the performance we are trying to predict or understand, such as an individual's earnings. The exogenous variables $$ X_1,X_2,...,X_kX_1​,X_2​,...,X_k​ $$ are our lead dancers, each one contributing a part to the final outcome, with their coefficients $$β_1,β_2,...,β_kβ_1​,β_2​,...,β_k​$$ measuring the strength and direction of their influence. $$β_0β_0​$$ is the intercept, akin to the starting position of the dance, while ϵϵ represents the spontaneous flair or the inevitable missteps - the unexplained variance in our performance.
 
-$$ x = y^2 $$
-
-Here, YY represents the outcome of the dance, the performance we are trying to predict or understand, such as an individual's earnings. The exogenous variables X1,X2,...,XkX1​,X2​,...,Xk​ are our lead dancers, each one contributing a part to the final outcome, with their coefficients β1,β2,...,βkβ1​,β2​,...,βk​ measuring the strength and direction of their influence. β0β0​ is the intercept, akin to the starting position of the dance, while ϵϵ represents the spontaneous flair or the inevitable missteps - the unexplained variance in our performance.
-
-The error term ϵϵ captures the essence of what the vector XX cannot explain, the natural variance inherent in any performance, no matter how well choreographed. The exogenous variables, like skilled dancers, are uncorrelated with these errors. They do not anticipate the missteps nor react to them; their steps are predefined, their influence steady. This uncorrelatedness implies that the mean value of the error term is not influenced by these lead dancers. They carry no information about the errors and thus cannot predict them, even inexactly, safeguarding the integrity of our predictions and ensuring that when we attribute an outcome to our leads, it truly reflects their part in the dance and not the random stumbles along the way.
+The error term ϵϵ captures the essence of what the vector $$XX$$ cannot explain, the natural variance inherent in any performance, no matter how well choreographed. The exogenous variables, like skilled dancers, are uncorrelated with these errors. They do not anticipate the missteps nor react to them; their steps are predefined, their influence steady. This uncorrelatedness implies that the mean value of the error term is not influenced by these lead dancers. They carry no information about the errors and thus cannot predict them, even inexactly, safeguarding the integrity of our predictions and ensuring that when we attribute an outcome to our leads, it truly reflects their part in the dance and not the random stumbles along the way.
 
 ### The Simultaneity Shuffle and the Machine Learning Twist
 
