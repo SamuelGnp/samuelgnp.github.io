@@ -33,11 +33,15 @@ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
 $$
 {% endhighlight %}
 
-$$ x = y^2 $$
+
 
 $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
 $$
+
+
+
+$$ x = y^2 $$
 
 Here, YY represents the outcome of the dance, the performance we are trying to predict or understand, such as an individual's earnings. The exogenous variables X1,X2,...,XkX1​,X2​,...,Xk​ are our lead dancers, each one contributing a part to the final outcome, with their coefficients β1,β2,...,βkβ1​,β2​,...,βk​ measuring the strength and direction of their influence. β0β0​ is the intercept, akin to the starting position of the dance, while ϵϵ represents the spontaneous flair or the inevitable missteps - the unexplained variance in our performance.
 
