@@ -33,6 +33,8 @@ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
 $$
 {% endhighlight %}
 
+$$ x = y^2 $$
+
 $$
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_k X_k + \epsilon
 $$
