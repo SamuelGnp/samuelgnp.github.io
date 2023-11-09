@@ -49,10 +49,13 @@ For example, if we fail to include a variable like the level of education in our
 Simultaneity enters the stage when variables such as supply and demand react to each other in real-time. If this mutual interaction isn't accounted for, models may incorrectly assign causation, leading to a tangled understanding of the relationships at play.
 
 Demand function:
+
 $$
 Q_d = \alpha + \beta P + \epsilon_d
 $$
+
 Price function:
+
 $$
 P = \gamma + \delta Q_d + \epsilon_p
 $$
@@ -81,6 +84,7 @@ Finding a suitable instrument in practice is often akin to casting the perfect l
 Instrument Validity:
 
 Exogeneity:
+
 $$
 Cov(Instrument, \epsilon) = 0
 $$
@@ -109,10 +113,9 @@ This equation allows us to subtract out the part of the variation in the outcome
 The DiD approach relies on comparing the changes in outcomes over time between a group that is exposed to a treatment (the treatment group) and a group that is not (the control group). The fundamental assumption here is that, in the absence of the treatment, the difference in outcomes between the two groups would have remained constant over time — an assumption known as the parallel trends assumption:
 
 Parallel Trends Assumption:
+
 $$
-\[
 E[Y_{\text{treatment}, \text{pre}} - Y_{\text{control}, \text{pre}}] = E[Y_{\text{treatment}, \text{post}} - Y_{\text{control}, \text{post}}]
-\]
 $$
 
 This assumption is critical and often the hardest to verify, as it requires knowing the counterfactual — what would have happened in the absence of the treatment. While pre-treatment trends can be analyzed, the assumption cannot be tested directly for the post-treatment period. Violations of the parallel trends assumption can lead to biased estimates of the treatment effect.
