@@ -1,7 +1,7 @@
 ---
 title: "Econometrics vs. Machine Learning: Decoding the Data Duel"
 layout: post
-date: 2023-11-07 15:51
+date: 2023-11-01 15:51
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
