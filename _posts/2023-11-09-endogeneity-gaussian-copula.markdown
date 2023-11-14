@@ -32,9 +32,14 @@ $ Z = Φ^-1(U) $
 
 where $ Z $ now follows a standard normal distribution.
    
-4. Correlation Choreography: Now, we must consider their dance chemistry. Height and Weight often move together—the taller the dancer, the more they weigh. We quantify their synchronicity with a correlation value, say 0.7, and this guides their duet performance.
-5. Simulating the Performance: With the Gaussian copula's choreography set, we simulate a new dance, creating moves that maintain the individual styles of Height and Weight but respect their duet's chemistry.
-6. Final Transformation: Finally, we translate their moves back into their original dance styles, ensuring that while they perform in concert, their individual flair remains intact.
+3. Correlation Choreography: Now, we must consider their dance chemistry. Height and Weight often move together—the taller the dancer, the more they weigh. We quantify their synchronicity with a correlation value, say 0.7, and this guides their duet performance. Let's consider two variables, $ X $ and $ Y $, transformed into $ Z_X $​ and $ X_Y $ respectively. The dependency structure is then captured by a correlation matrix $ Σ $, and the Gaussian copula function $ C $ is defined as:
+$ C(u,v;Σ)=Φ_Σ​(Φ^−1(u),Φ^−1(v)) $
+
+where $ Φ_Σ $​ is the joint CDF of a multivariate normal distribution with correlation matrix $ Σ $, and $ u $, $ v $ are the uniform transforms of $ X $ and $ Y $.
+   
+4. Simulating the Performance: With the Gaussian copula's choreography set, we simulate a new dance, creating moves that maintain the individual styles of Height and Weight but respect their duet's chemistry.
+   
+5. Final Transformation: Finally, we translate their moves back into their original dance styles, ensuring that while they perform in concert, their individual flair remains intact.
 
 #### Applications and Intuitive Examples
 The applications of the Gaussian copula stretch far beyond the theoretical. Let's look at some intuitive examples:
