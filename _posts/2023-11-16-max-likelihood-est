@@ -13,9 +13,9 @@ author: samuelgnap
 description: maximum likelihood estimation
 ---
 
-# Maximum Likelihood Estimation and implementation in a regression 
+## Maximum Likelihood Estimation and implementation in a regression 
 Maximum Likelihood Estimation (MLE) is a cornerstone method in statistics, particularly within the frequentist framework. It's a powerful approach used in a wide range of applications, from simple linear regression to complex machine learning models like neural networks. MLE's versatility and robustness make it a preferred method in both academic and practical settings.
-## Understanding MLE in Everyday Terms
+### Understanding MLE in Everyday Terms
 Imagine you're a chef trying to perfect a recipe. You have certain ingredients (parameters) like salt, sugar, and flour, and you want to find the right mix that will make your dish (data) taste the best (most likely). Maximum Likelihood Estimation (MLE) is like this process of tweaking the ingredients until you find the best combination that makes your dish taste exactly how you want.
 •	The "Taste Test": Think of the likelihood function in MLE as a taste test. Each time you change the amount of an ingredient, you're checking to see how likely it is that this new mix will give you the perfect taste.
 •	Finding the Perfect Recipe: The goal of MLE is to adjust the ingredients until you find the recipe where the dish tastes the best (maximizing the likelihood). It's a bit like trial and error, but guided by the feedback from each taste test.
