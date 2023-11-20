@@ -1,16 +1,16 @@
 ---
-title: "Maximum Likelihood Estimation and implementation in a regression"
+title: "Untangling Complex Dependencies with the Gaussian Copula: Intuition and Applications"
 layout: post
-date: 2023-11-16 15:51
+date: 2023-11-09 19:05
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- components
-- extra
+- econometrics
+- Simultaneity
+- Endogeneity
 category: blog
 author: samuelgnap
-description: maximum likelihood estimation
+description: Ommited variable problem 
 ---
 
 ## Maximum Likelihood Estimation and implementation in a regression 
