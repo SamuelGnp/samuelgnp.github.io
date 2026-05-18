@@ -1,7 +1,7 @@
 ---
 title: "Synthetic control is the only causal tool that survives contact with a pricing team"
 layout: post
-date: 2026-06-11 10:00
+date: 2026-04-21 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

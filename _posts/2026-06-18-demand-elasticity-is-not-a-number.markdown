@@ -1,7 +1,7 @@
 ---
 title: "Demand elasticity is not a number"
 layout: post
-date: 2026-06-18 10:00
+date: 2026-05-08 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

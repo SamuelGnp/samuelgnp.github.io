@@ -1,7 +1,7 @@
 ---
 title: "Overbooking is a no-show problem with extra steps"
 layout: post
-date: 2026-06-25 10:00
+date: 2026-04-03 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

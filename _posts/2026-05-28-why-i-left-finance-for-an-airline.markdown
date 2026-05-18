@@ -1,7 +1,7 @@
 ---
 title: "Why I left finance for an airline"
 layout: post
-date: 2026-05-28 10:00
+date: 2026-04-10 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

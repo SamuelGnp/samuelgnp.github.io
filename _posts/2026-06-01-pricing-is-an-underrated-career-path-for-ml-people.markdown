@@ -1,7 +1,7 @@
 ---
 title: "Pricing is an underrated career path for ML people"
 layout: post
-date: 2026-06-01 10:00
+date: 2026-04-07 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

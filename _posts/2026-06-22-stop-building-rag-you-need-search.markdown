@@ -1,7 +1,7 @@
 ---
 title: "Stop building RAG. You probably need search."
 layout: post
-date: 2026-06-22 10:00
+date: 2026-04-24 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

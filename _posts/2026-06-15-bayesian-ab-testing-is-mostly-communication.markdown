@@ -1,7 +1,7 @@
 ---
 title: "Bayesian A/B testing is mostly a communication tool"
 layout: post
-date: 2026-06-15 10:00
+date: 2026-04-14 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

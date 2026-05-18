@@ -1,7 +1,7 @@
 ---
 title: "Reinforcement learning beat my pricing rules, but not for the reasons I expected"
 layout: post
-date: 2026-06-04 10:00
+date: 2026-05-01 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

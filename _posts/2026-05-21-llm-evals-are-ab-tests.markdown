@@ -1,7 +1,7 @@
 ---
 title: "LLM evals are A/B tests, and most teams are doing both badly"
 layout: post
-date: 2026-05-21 10:00
+date: 2026-05-05 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

@@ -1,7 +1,7 @@
 ---
 title: "What I learned reading Karpathy's nanochat as a pricing scientist"
 layout: post
-date: 2026-06-29 10:00
+date: 2026-04-28 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

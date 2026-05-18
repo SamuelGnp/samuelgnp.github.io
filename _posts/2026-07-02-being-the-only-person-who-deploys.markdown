@@ -1,7 +1,7 @@
 ---
 title: "Being the only person on your team who actually deploys code"
 layout: post
-date: 2026-07-02 10:00
+date: 2026-03-31 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

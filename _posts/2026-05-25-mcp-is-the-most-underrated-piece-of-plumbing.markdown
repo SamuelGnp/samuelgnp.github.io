@@ -1,7 +1,7 @@
 ---
 title: "MCP is the most underrated piece of plumbing in the AI stack"
 layout: post
-date: 2026-05-25 10:00
+date: 2026-05-12 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

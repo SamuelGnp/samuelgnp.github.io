@@ -1,7 +1,7 @@
 ---
 title: "How I use LLMs as a Lead DS in 2026"
 layout: post
-date: 2026-05-18 10:00
+date: 2026-05-15 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:

@@ -1,7 +1,7 @@
 ---
 title: "Most A/B tests in pricing don't measure what you think they measure"
 layout: post
-date: 2026-06-08 10:00
+date: 2026-04-17 10:00
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
