@@ -1,9 +1,9 @@
 # main text of home
 title: Samuel Gnap
-bio: Always curious
+bio: Lead Data Scientist. Airline pricing, Bayesian methods, LLMs in production.
 
 # twitter summary info
-description: A blog about technology and stuff
+description: Essays on pricing, Bayesian inference, and LLMs from a working Lead Data Scientist.
 
 # if it's an external image, update below for true
 # better with square images
@@ -24,13 +24,10 @@ url: https://samuelgnp.github.io
 
 permalink: /:title/
 
+future: true
+
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
-
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: github # enter this from your disqus account
-  categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -43,9 +40,9 @@ email: gnapsamuel@yahoo.com
 authors:
   samuelgnap:
     name: Samuel Gnap
-    bio: A Man who develops software with coffee
+    bio: Lead Data Scientist working on airline pricing. Bayesian inference, RL, and LLMs in production.
     external-image: false
-    picture: assets/images/james.jpg
+    picture: assets/images/sam.jpg
     twitter: jamesfoster
 
 # do you want a larger site? change the option below
@@ -107,4 +104,5 @@ exclude:
     "Gemfile.lock",
     "FAQ.md",
     "vendor",
+    "_planning",
   ]

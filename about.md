@@ -4,32 +4,12 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Hi and welcome to my blog!</p>
+I'm Samuel Gnap, a Lead Data Scientist working on airline pricing in London.
 
-<p> I'm Samuel Gnap, a data science enthusiast and a bit of a number cruncher at heart. 
-	Currently, I'm navigating the skies of data with easyJet in London, where I blend my love for numbers (and planes) 
-	with real-world applications. My journey in this field started with a deep dive into 
-	Quantitative Finance, and since then, it's been a thrilling ride through the realms of analytics and beyond.</p>
+My day job is building the models that decide what every seat on every flight should cost. The stack is mostly Bayesian inference for demand and elasticity, reinforcement learning for sequential pricing decisions, and increasingly LLMs and agents for the work around the models. I ship to production, present results to commercial leaders, and own the systems end to end.
 
- <p>
-	 In today's world, where AI and machine learning are the buzzwords, I often find myself drawn back 
-	 to the roots of causal inference and the robust principles of econometrics. There's something fascinating 
-	 about these "good old school" methods and how they can sometimes outshine even the most 
-	 sophisticated machine learning models, depending on the problem at hand of course.
- </p>
+I came to airline pricing through fixed income. I worked at the European Investment Bank on corporate bond pricing and an XVA library, studied econometrics at Aarhus, and spent a year on a master's project at Imperial College building multinomial logit models with Bayesian updates and a deep learning component for transport choice, written from scratch in Python and C++. The thread running through all of it is decision-making under uncertainty when you cannot run a clean experiment.
 
- <p>
-	 Through this blog, I aim to unravel the tapestry of traditional statistical techniques and how 
-	 they still hold significant value in our increasingly AI-driven world. I believe that a blend of 
-	 these classic methods with modern technology can lead to some really exciting insights and solutions. 
-	 So, whether you're a data science newbie or a seasoned pro, I invite you to join me on this exploration 
-	 of the less-traveled paths of data science, where we'll rediscover the charm of causal inference 
-	 and econometrics in solving real-world problems.
- </p>
+This blog is opinionated essays from that vantage point. Pricing, causal inference, Bayesian methods, and the parts of the LLM stack that are actually useful in production. Every post has a thesis. If you want tutorials, this is the wrong place.
 
-<h2>Skills</h2>
-
-<ul class="skill-list">
-	<li>Python</li>
-	<li>and whatever is needed for the job (SQL, C, C++,..., and much more)</li>
-</ul>
+You can find me on [LinkedIn](https://www.linkedin.com/in/gnapsamuel) and [GitHub](https://github.com/SamuelGnp).
