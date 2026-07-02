@@ -4,15 +4,50 @@ title: Projects
 ---
 <section class="list">
     <div class="item">
-        <a class="url" href="https://esro.sk">
-            <h3 class="title">esro.sk</h3>
+        <a class="url" href="https://github.com/sam-gnap/switchwise">
+            <h3 class="title">SwitchWise</h3>
+            <aside>in progress</aside>
         </a>
+        <p class="description">An agent that reads an Australian electricity bill, explains it in plain English, and recommends cheaper plans from live AER tariff data. Built evals-first, with a trust-zone architecture designed to survive believable prompt-injection attacks. The operational form of <a href="{{ site.url }}/stop-building-rag-you-need-search/">Stop building RAG</a>.</p>
+    </div>
+    <div class="item">
+        <a class="url" href="https://github.com/sam-gnap/au-visa-pathway-agent">
+            <h3 class="title">AU Visa Pathway Agent</h3>
+            <aside>Next.js / TS</aside>
+        </a>
+        <p class="description">Rule-based recommender for nine Australian visa subclasses: hand-encoded rules, a pathway graph, and source-linked verdicts. Deliberately not an LLM product — recommendations come out cleaner from encoded rules than from a freeform chatbot.</p>
     </div>
     <div class="item">
         <a class="url" href="{{ site.url }}/what-i-learned-reading-nanochat/">
-            <h3 class="title">Nanochat study</h3>
+            <h3 class="title">LLM internals series</h3>
+            <aside>essays</aside>
         </a>
+        <p class="description">Reading, training, and dissecting Karpathy's nanochat: what a $10 training run teaches you, how GPT-2 actually works piece by piece, and what refusal directions look like inside a model.</p>
     </div>
+    <div class="item">
+        <a class="url" href="https://github.com/sam-gnap/volatility_estimator">
+            <h3 class="title">ETH/USDC volatility estimator</h3>
+            <aside>Rust</aside>
+        </a>
+        <p class="description">Real-time volatility estimation fusing Kraken and Uniswap v3 websocket feeds — VWAP normalisation across venues, tick-level cleaning after Barndorff-Nielsen and Brownlees–Gallo, configurable realised-vol windows.</p>
+    </div>
+    <div class="item">
+        <a class="url" href="https://github.com/sam-gnap/proteus-LP-backtesting">
+            <h3 class="title">Uniswap v3 LP backtesting</h3>
+            <aside>Python</aside>
+        </a>
+        <p class="description">Tick-level pool reconstruction and position simulation for concentrated-liquidity strategies — what an LP position would actually have earned after fees and divergence loss.</p>
+    </div>
+    {% comment %}
+    Pending write-up post + screenshots (repo stays private):
+    <div class="item">
+        <a class="url" href="{{ site.url }}/building-podnikni/">
+            <h3 class="title">Podnikni</h3>
+            <aside>SvelteKit</aside>
+        </a>
+        <p class="description">A "Stripe Atlas for Slovakia" — AI-assisted s.r.o. formation: wizard, Stripe payment, Claude-generated founding documents, compliance dashboard.</p>
+    </div>
+    {% endcomment %}
     {% for post in site.posts %}
         {% if post.projects %}
             <div class="item {% if post.star %}star{% endif %}">

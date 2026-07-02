@@ -12,4 +12,4 @@ I came to airline pricing through fixed income. I worked at the European Investm
 
 This blog is opinionated essays from that vantage point. Pricing, causal inference, Bayesian methods, and the parts of the LLM stack that are actually useful in production. Every post has a thesis. If you want tutorials, this is the wrong place.
 
-You can find me on [LinkedIn](https://www.linkedin.com/in/gnapsamuel) and [GitHub](https://github.com/SamuelGnp).
+You can find me on [LinkedIn](https://www.linkedin.com/in/gnapsamuel) and [GitHub](https://github.com/sam-gnap).
